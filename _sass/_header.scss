@@ -8,12 +8,10 @@ nav {
 
     .page-link {
         color: $text-color-light;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
+        display: inline-block;
+        height: 60px;
+        line-height: 60px;
+        padding: 0 16px;
     }
 
     @include media-query($on-palm) {
@@ -24,6 +22,12 @@ nav {
         border: 1px solid $primary-color-dark;
         border-radius: 5px;
         text-align: right;
+        
+        .page-link {
+            line-height: $base-line-height;   
+            height: auto;
+            display: inline;
+        }
 
         .menu-icon {
             display: block;
@@ -33,6 +37,10 @@ nav {
             line-height: 0;
             padding-top: 10px;
             text-align: center;
+                    
+            &:hover {
+                background-color: transparent;
+            }
 
             > svg {
                 width: 18px;
