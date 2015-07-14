@@ -1,0 +1,73 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: 'Roboto', Arial, sans-serif;
+$heading-font-family: 'Roboto Slab', serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     20px;
+
+$background-color: #fdfdfd;
+
+$black: #000000;
+$text-color: lighten($black, 13%);
+$icon-color: lighten($black, 46%);
+$text-color-secondary: lighten($black, 46%);
+$text-color-disabled: lighten($black, 74%);
+$divider-color: lighten($black, 88%);
+
+$white: #ffffff;
+$text-color-light: $white;
+$icon-color-light: $white;
+$text-color-secondary-light: darken($white, 30%);
+$text-color-disabled-light: darken($white, 70%);
+$divider-color-light: darken($white, 88%);
+
+$primary-color: #009688;
+$primary-color-light: #B2DFDB;
+$primary-color-dark: #00695C;
+
+$accent-color: #FFD740;
+$accent-color-light: #FFE57F;
+$accent-color-dark: #FFC400;
+
+$link-color: $accent-color;
+$link-color-dark: $accent-color-dark;
+
+// Width of the content area
+$content-width:    1000px;
+
+$on-palm:          760px;
+$on-laptop:        1024px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "header",
+        "syntax-highlighting"
+;

@@ -1,0 +1,26 @@
+{
+  "name": "jleajones-blog",
+  "version": "1.0.0",
+  "description": "jekyll site of online resume, blog, and portfolio of front-end developer, j.lea-jones",
+  "main": "_site/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jleajones/jleajones.github.com.git"
+  },
+  "keywords": [
+    "jekyll",
+    "grunt",
+    "font-awesome",
+    "jquery",
+    "bower"
+  ],
+  "author": "j.lea-jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jleajones/jleajones.github.com/issues"
+  },
+  "homepage": "https://github.com/jleajones/jleajones.github.com#readme"
+}

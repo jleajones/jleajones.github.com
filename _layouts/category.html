@@ -1,0 +1,13 @@
+---
+layout: page
+---
+<h1>{{ page.category }}</h1>
+
+<ul class="post-list">
+{% for post in site.categories[page.category] %}
+  <li>
+    <h2><a class="post-link" href="{{post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+  </li>
+{% endfor %}
+</ul>        
+   

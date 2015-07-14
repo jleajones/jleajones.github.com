@@ -1,0 +1,23 @@
+---
+layout: page
+title: Blog | J.Lea-Jones
+permalink: /blog/
+label: Blog
+---
+<h1>{{ page.label }}</h1>
+
+<div class="blog">
+  <ul>
+    {% for post in site.posts %}
+      <li class="{{ post.category }}">
+        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <p><a href="/category/{{ post.category }}">{{ post.category }}</a></p>
+        <p>{{ post.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

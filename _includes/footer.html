@@ -1,0 +1,33 @@
+<footer class="site-footer">
+
+    <div class="wrapper">
+
+        <!--    <h2 class="footer-heading">{{ site.title }}</h2>-->
+
+        <ul class="contact-list">
+            <li>{{ site.title }}</li>
+            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            </li>
+        </ul>
+
+        <ul class="social-media-list">
+            {% if site.github_username %}
+            <li>
+                <a href="https://github.com/{{ site.github_username }}">github</span>
+            </a>
+            </li>
+            {% endif %} {% if site.twitter_username %}
+            <li>
+                <a href="https://twitter.com/{{ site.twitter_username }}">twitter</span>
+            </a>
+            </li>
+            {% endif %}
+        </ul>
+
+
+        <p class="text">{{ site.description }}</p>
+
+
+    </div>
+
+</footer>

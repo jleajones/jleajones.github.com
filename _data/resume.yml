@@ -1,0 +1,204 @@
+intro: > # this means to ignore newlines until "sections:"
+    A computer science professional capable of managing technology projects from conception to completion with remarkable deadline sensitivity and with a strong sense of aesthetics and attention to details. Strong analytical skills combined with experience in object oriented programming and graphic design techniques allow me to solve complex design and development issues. I am a compatible team player willing to tackle tasks throughout various stages of the product lifecycle. I excel in team collaboration, solution brainstorming, and ideation sessions.  I enjoy a good challenge and I'm always looking to learn something new.
+sections:
+    - name: skills
+      slug: skills
+      children: 
+        - name: Platforms
+          entries:
+            - MacOS
+            - Windows
+            - Linux
+            - Unix
+        - name : Languages
+          entries: 
+            - JavaScript
+            - SASS
+            - PHP
+            - Java
+            - Python
+            - Ruby
+            - Perl
+            - XML
+            - JavaServer Pages
+            - Freemarker
+            - C
+            - C++
+            - Objective-C
+            - Bash
+            - HTML
+            - CSS
+        - name: Frameworks/Libraries/APIs
+          entries:
+            - Express
+            - AngularJS
+            - React
+            - Ember
+            - Backbone
+            - Google Analytics
+            - Google Maps
+            - Google Publisher Tag
+            - Google Adsense
+            - jQuery
+            - Underscore
+            - Zepto
+            - Jasmine
+            - Mocha
+            - Boomerang
+            - D3
+            - Twitter Bootstrap
+            - Zurb Foundation
+            - Gridle
+            - Wordpress
+            - Drupal
+            - Laravel
+            - CodeIgniter
+            - CakePHP
+            - Symfony
+            - Zend2
+            - Magento
+            - Zen Cart
+            - Jekyll
+            - Ruby on Rails
+            - Spring
+            - Swagger
+            - Django
+            - Twitter
+            - Instagram
+            - Facebook
+            - Four Square
+            - Pinterest
+            - Amazon Web Services
+        - name: Tools
+          entries:
+            - Karma
+            - Grunt
+            - Gulp
+            - Git
+            - '[Home]Brew'
+            - Yeoman
+            - Bower
+            - NPM
+            - Maven
+            - Jenkins
+            - Travis-CI
+            - JSHint
+            - Amazon Web Services
+    - name: work history
+      slug: work-history
+      children:
+        - name: About.com
+          position: Front-End Developer
+          start_date: 6/14
+          end_date: present
+          entries:
+            - > # this means to ignore newlines until "next task:"
+              used revealing module pattern to wrap the <a href="https://developers.google.com/doubleclick-gpt">google publisher tag javascript library</a> and implement business logic, exposing a public JavaScript API used on <a href="http://www.about.com" target="_blank">About.com</a>
+            - > # this means to ignore newlines until "next task:"
+              contributed to building and maintaining  <a href="http://about.about.com/post/96996743063/the-new-about-com-in-the-news" target="_blank">the 'NEW' About.com</a> using Freemaker, XML, Java, SASS, and JavaScript
+            - > # this means to ignore newlines until "next task:"
+              helped company grow by particpating and contributing to the technology hiring process and onboarding material/documentation
+            - > # this means to ignore newlines until "next task:"
+              used <a href="http://opensource.indeedeng.io/proctor/">proctor</a> to configure and implement <a href="https://en.wikipedia.org/wiki/A/B_testing" target="_blank">A/B tests</a> to test engagment, monetization, and overall site performance
+            - > # this means to ignore newlines until "next task:"
+              participated in daily agile practices based on 2 week sprints using <a href="https://www.atlassian.com/software/jira" target="_blank">Jira</a> and a physical board to represent status of stories
+            - > # this means to ignore newlines until "next task:"
+              collaborated with product, design, qa, business intelligence, and ad operation teams to meet goals, improve features, clarify requirments, and provide the best user experience
+            - > # this means to ignore newlines until "next task:"
+              used <a href="http://www.lognormal.com/boomerang/doc/" target="_blank">the boomerang javascript library</a> to implement a custom <a href="https://en.wikipedia.org/wiki/Real_user_monitoring" target="_blank">RUM solution</a> for monitoring key metrics on About.com
+            - > # this means to ignore newlines until "next task:"
+              continued to SMASH bugs
+        - name: ConsumerSearch
+          position: Front-End Developer
+          start_date: 2/13
+          end_date: 6/14
+          entries: 
+            - > # this means to ignore newlines until "next task:"
+              used <a href="https://angularjs.org/" target="_blank">AngularJS</a> and <a href="http://foundation.zurb.com/" target="_blank">foundation</a> to prototype and iterate on groundbreaking eCommerce products powered by a RESTful API
+            - > # this means to ignore newlines until "next task:"
+              contributed to the creation, maintenance, and improvments of multiple RESTful API using <a href="" target="_blank">Express</a>, <a href="" target="_blank">Swagger</a>, and <a href="" target="_blank">MongoDB</a>
+            - > # this means to ignore newlines until "next task:"
+              worked with product team to brainstorm, implement, and roll-out A/B tests (and winners) and user tests (and enhancements that come out of user tests) to improve user experience and meet business goals without sacrificing site performance and monetization
+            - > # this means to ignore newlines until "next task:"
+              contributed to existing <a href="http://www.consumersearch.com/" target="_blank">consumerSearch</a> Drupal code base &ndash; built new home page, migrated to the newer google adsene and analytics libraries, worked with Ask.com to implement tracking and SEM pixels, and SMASHED various bugs
+        - name: Pronto
+          position: Jr. Front-End Developer
+          start_date: 8/11
+          end_date: 2/13
+          entries: 
+            - > # this means to ignore newlines until "next task:"
+              used Drupal, JavaServer Pages, CSS, and jQuery to build and maintain multiple shopping comparison sites, mircosites, and content sites 
+            - > # this means to ignore newlines until "next task:"
+              worked closely with product and SEM team to implement A/B tests using a proprietary framework to improve SEM conversion and user experience
+            - > # this means to ignore newlines until "next task:"
+              collaborated with back-end Java developers to build and maintain <a href="https://chrome.google.com/webstore/detail/price-finder/lhpbbgjabfbiiahbnpgajodepdclnfpn?hl=en" target="_blank">Pricefinder</a>, a browser extension for Chrome and Firefox
+        - name: The Mouse Artist
+          position: Associate Web Developer
+          start_date: 4/10
+          end_date: 8/11
+          entries: 
+            - > # this means to ignore newlines until "next task:"
+              used LAMP stack, CSS, and JavaScript to build custom websites from photoshop and illustrator mocks provided by design team
+            - > # this means to ignore newlines until "next task:"
+              built custom themes for and deployed multiple Wordpress, Drupal, Joomla, and Magento sites
+            - > # this means to ignore newlines until "next task:"
+              worked with clients to prototype and build version 1 of a proprietary, easy to use CMS supporting various page types, layouts, and data models using PHP, mySql, and JavaScript
+            - > # this means to ignore newlines until "next task:"
+              interfaced with clients and vendors to gather requirements, access to APIs, and all other information needed to complete their projects
+        - name: Westat
+          position: Office of Automated Systems Technician
+          start_date: 11/08
+          end_date: 3/10
+          entries: 
+        - name: Howard University
+          position: PeopleSoft Help Desk Teir II
+          start_date: 5/08
+          end_date: 11/08
+          entries: 
+        - name: University of Maryland Catt Lab
+          position: Student Worker
+          start_date: 9/07
+          end_date: 5/08
+          entries: 
+        - name: SAIC
+          position: Operations Research Intern
+          start_date: 6/06
+          end_date: 8/07
+          entries: 
+        - name: Schoor DePalma
+          position: Traffic Safety and Planning Department Intern
+          start_date: 6/05
+          end_date: 8/05
+          entries: 
+        - name: New Jersey Department of Youth and Family Services (DYFYS)
+          position: Summer Intern
+          start_date: 6/04
+          end_date: 8/04
+          entries: 
+            - > # this means to ignore newlines until "next task:"
+              assisted casework staff in the creation and maintenance of child welfare documents and case records
+            - > # this means to ignore newlines until "next task:"
+              performed various tasks for the motor pool department to ensure all vehicles were in the best possible condition for daily usage
+            - > # this means to ignore newlines until "next task:"
+              acted as assitant to Facilities and IT Services Director
+            - > # this means to ignore newlines until "next task:"
+              worked with the clerical staff and office manager to order supplies, keep the printer and fax machine running smoothly, managing the phones &amp; the front door, and entering expenses
+    - name: portfolio
+      slug: portfolio
+      children:
+        - name: about.com
+        - name: consumersearch.com
+        - name: pronto.com
+        - name: tbeventsmedia.com
+        - name: 267pacific.com
+    - name: education
+      slug: education
+      children:
+        - name: University of Maryland
+          entries:
+            - College Park, MD
+            - BS in Computer Engineering, 2008
+        - name: Seton Hall Preparatory School
+          entries:
+            - West Orange, NJ
+            - High School Diploma, 2003

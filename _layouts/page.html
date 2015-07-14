@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<div class="page">
+  <div class="wrapper">
+    {{ content }}
+
+   {% if page.url contains '/blog' %}
+       <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+   {% endif %}
+  </div>
+</div>

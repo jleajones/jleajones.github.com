@@ -1,0 +1,37 @@
+---
+layout: page
+title: Resume | J.Lea-Jones
+permalink: /resume/
+label: Resume
+section1: workhistory
+---
+<h1>{{ page.label }}</h1>
+
+<div class="about">
+    <p>{{ site.data.resume.intro }}</p>
+
+      <ul>
+       {% for section in site.data.resume.sections %}
+           <li class="{{ section.slug }}">
+               <h2>{{ section.name }}</h2>
+               <ul>
+                {% for child in section.children %}
+                   <li><h3>{{ child.name }}</h3>
+                      {% if section.name == 'work history' %}
+                          <span><b>{{child.position}}</b> {{ child.start_date }} &ndash; {{ child.end_date }}</span>
+                      {% endif %}
+                       <ul>    
+                       {% for entry in child.entries %}
+                           <li class="{% if forloop.index > 4 and section.name == 'skills' %}hidden{% endif %}">{{ entry }}</li>
+                            {% if section.name == 'skills' and forloop.last and forloop.length > 4 %}
+                            <li class="more"><button>more</button></li>
+                            {% endif %}
+                       {% endfor %}
+                       </ul>
+                   </li>
+                {% endfor %}
+                </ul>
+           </li>
+       {% endfor %}   
+      </ul>
+</div>

@@ -1,0 +1,21 @@
+# Site settings
+title: J.Lea-Jones
+email: jason@jleajones.com
+description: > # this means to ignore newlines until "baseurl:"
+  Online resume, portfolio, and blog of professional web developer, avid music producer, fantasy football aficionado, and novice photographer J. Lea-Jones.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: jleajones
+github_username:  jleajones
+highlighter: true
+
+# Build settings
+markdown: kramdown
+
+# Permalinks
+permalink: /blog/:year/:month/:day/:title/
+
+# Collections
+collections:
+  projects:
+    output: true
