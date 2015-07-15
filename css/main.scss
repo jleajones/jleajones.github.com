@@ -64,10 +64,32 @@ $on-laptop:        1024px;
 
 
 
+@mixin border($style, $sides...){
+    @if ($style) {
+        @if (length($sides) > 0) {
+            @each $side in $sides {
+                @if ($side == 'top' or $side == 'right' or $side == 'bottom' or $side == 'left') {
+                    border-#{$side}: $style;
+                }
+            }
+        } @else {
+            border: $style;
+        }
+    }
+}
+
+@mixin box_shadow($x, $y, $blur, $r, $g, $b, $a){
+    box-shadow: $x $y $blur rgba($r, $g, $b, $a);
+}
+
+
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
         "layout",
         "header",
+        "content",
+        "spotlight",
         "syntax-highlighting"
 ;

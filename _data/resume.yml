@@ -186,11 +186,11 @@ sections:
     - name: portfolio
       slug: portfolio
       children:
-        - name: about.com
-        - name: consumersearch.com
-        - name: pronto.com
-        - name: tbeventsmedia.com
-        - name: 267pacific.com
+        - name: <a href="http://www.about.com/" target="_blank">about.com</a>
+        - name: <a href="http://www.consumersearch.com/" target="_blank">consumersearch.com</a>
+        - name: <a href="http://www.pronto.com/" target="_blank">pronto.com</a>
+        - name: <a href="http://www.tbeventsmedia.com/" target="_blank">tbeventsmedia.com</a>
+        - name: <a href="http://www.267pacific.com/" target="_blank">267pacific.com</a>
     - name: education
       slug: education
       children:
