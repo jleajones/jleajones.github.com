@@ -37,7 +37,7 @@ header {
         }
         @include media-query($on-palm) {
             position: absolute;
-            top: 9px;
+            top: 16px;
             right: 30px;
             background-color: $primary-color;
             border: 1px solid $primary-color-dark;
@@ -54,7 +54,7 @@ header {
                 width: 36px;
                 height: 26px;
                 line-height: 0;
-                padding-top: 10px;
+                padding-top: 6px;
                 text-align: center;
                 &:hover {
                     background-color: transparent;
