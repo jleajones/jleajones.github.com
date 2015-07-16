@@ -130,8 +130,10 @@ button {
     border: solid 2px $accent-color-dark;
     cursor: pointer;
     text-transform: uppercase;
-    -webkit-transition-property: box-shadow, background-color;
-    transition-property: box-shadow, background-color;
+    outline: none;
+    
+    -webkit-transition-property: box-shadow, background-color, color;
+    transition-property: box-shadow, background-color, color;
     -webkit-transition-duration: .1s;
     transition-duration: .1s;
     -webkit-transition-timing-function: ease-in;
@@ -142,6 +144,10 @@ button {
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.42);
         background-color: $accent-color-dark;
         color: #fff;
+    }
+    
+    &:active {
+        box-shadow: none;
     }
 }
 /**
@@ -276,4 +282,8 @@ form {
 
 .pull-right {
     float: right;
+}
+
+.no-list-style {
+    list-style: none;
 }

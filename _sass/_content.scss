@@ -2,6 +2,19 @@
     margin-top: 65px;
     margin-bottom: $spacing-unit;
     .page {
-        padding-top: 10px;   
+        padding-top: 10px;
+        .blog,
+        .projects {
+            ul {
+                margin: 0;
+                li {
+                    margin-bottom: $spacing-unit * 2;
+                    
+                    img {
+                        margin-bottom: $spacing-unit/2;
+                    }
+                }
+            }
+        }
     }
 }

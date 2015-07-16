@@ -18,8 +18,9 @@ header {
         float: left;
         color: transparentize($text-color-light, 0.65);
         &:hover {
+            background: transparent;
             text-decoration: none;
-            color: $text-color-light;
+            color: $accent-color;
         }
     }
     nav {
