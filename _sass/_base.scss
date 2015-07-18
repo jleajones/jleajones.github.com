@@ -119,11 +119,23 @@ a {
     color: $link-color;
     text-decoration: none;
     padding: 2px 4px;
+    transition: .2s;
     &:hover {
         color: #fff;
         background-color: $link-color-dark;
     }
 }
+
+figure {
+    > a {
+        border: none;
+        padding: 0;
+    }
+}
+
+/**
+ * Buttons
+ */
 
 button {
     background-color: $accent-color-light;
@@ -267,6 +279,9 @@ form {
 /**
  * Helpers
  */
+.boder {
+    @include border(solid 1px $divider-color);
+}
 
 .hidden {
     display: none;

@@ -7,23 +7,7 @@ label: Blog
 <h1>{{ page.label }}</h1>
 
 <div class="blog">
-    <ul>
-        {% for post in site.posts %}
-        <li class="{{ post.category }} no-list-style">
-            <figure>
-            {% if post.image %}
-                <img src="/assets/{{post.image}}" /> 
-            {% endif %}
-                <figcaption>
-                    <span><a href="/category/{{ post.category }}">{{ post.category }}</a><span>
-                    <h2>
-                        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                    </h2>
-                    <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-                    <p>{{ post.excerpt }}</p>
-                </figcaption>
-            </figure>
-        </li>
-        {% endfor %}
+    <ul class="content-list no-list-style">
+        {% for post in site.posts %} {% include postExcerpt.html post=post %} {% endfor %}
     </ul>
 </div>

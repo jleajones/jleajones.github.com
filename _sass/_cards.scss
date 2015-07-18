@@ -1,0 +1,33 @@
+.cards {
+    margin: 0;
+    @extend %clearfix;
+    
+    > li,
+    > div {
+        width: 30%;
+        height: 306px;
+        float: left;
+        margin-right: 5%;
+        margin-bottom: $spacing-unit;
+        background: #fff;
+        @include border(solid 1px $divider-color);
+        
+        &:hover {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.42);
+        }
+        
+        figcaption {
+            padding: 12px;
+        }
+        
+        &:last-child {
+            margin-right: 0px;
+        }
+        
+        @include media-query($on-palm) {
+            width: 100%;
+            margin-right: 0;
+            height: auto;
+        }
+    }
+}

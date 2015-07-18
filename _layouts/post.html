@@ -2,13 +2,20 @@
 layout: default
 ---
 <div class="post">
-    <div class="wrapper">
-   <a href="/blog">&laquo; Back to blog</a>
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <a href="/blog">&laquo; Back to blog</a> 
+    {% if page.image %}
+    <div class="post-header-img">
+        <img src="/assets/{{page.image}}" />
+    </div>
+    {% endif %}
 
-  <article>
-    {{ content }}
-  </article>
-</div>
+    <div class="wrapper">
+        {% include postHeader.html category=page.category title=page.title date=page.date author=page.author meta=page.meta %}
+
+
+
+        <article>
+            {{ content }}
+        </article>
+    </div>
 </div>

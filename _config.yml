@@ -5,8 +5,14 @@ description: > # this means to ignore newlines until "baseurl:"
   Online resume, portfolio, and blog of professional web developer, avid music producer, fantasy football aficionado, and novice photographer J. Lea-Jones.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://jleajones.com" # the base hostname & protocol for your site
+
 twitter_username: jleajones
 github_username:  jleajones
+linkedin_username:  jleajones
+facebook_username:  jleajones
+instagram_username: j_leajones
+soundcloud_username: jleajones
+
 highlighter: pygments
 
 # Build settings

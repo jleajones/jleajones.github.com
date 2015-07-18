@@ -7,10 +7,10 @@ label: Projects
 <h1 class="page-title">{{ page.label }}</h1>
 
 <div class="projects">
-    <ul class="no-list-style">
+    <ul class="content-list">
         {% assign sorted_projects = site.projects | sort:'created' %}
         {% for project in sorted_projects %}
-        <li>
+        <li class="no-list-style">
             <h2>
               <a href="{{ project.url }}">{{ project.title }}</a>
             </h2>

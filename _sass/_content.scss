@@ -1,18 +1,26 @@
 .page-content {
     margin-top: 65px;
     margin-bottom: $spacing-unit;
-    .page {
+    .page,
+    .post {
         padding-top: 10px;
+
         .blog,
         .projects,
         .category {
-            ul {
+            ul.content-list {
                 margin: 0;
                 li {
+                    padding-bottom: $spacing-unit * 1.5;
                     margin-bottom: $spacing-unit * 2;
                     
+                    @include border(solid 1px $divider-color, bottom);
                     img {
                         margin-bottom: $spacing-unit/2;
+                    }
+                    
+                    h2 {
+                        font-size: $base-font-size*1.75;
                     }
                 }
             }

@@ -3,8 +3,6 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
 $base-font-family: 'Roboto', Arial, sans-serif;
 $heading-font-family: 'Roboto Slab', serif;
@@ -41,13 +39,50 @@ $accent-color-dark: #FFC400;
 $link-color: $accent-color;
 $link-color-dark: $accent-color-dark;
 
+$coding-color: #00b8d4;
+$general-color: #6200ea;
+$photography-color: #00c853;
+$lifestyle-color: #d50000;
+$producing-color: #eeff41;
+$sports-color: #eeff41;
+$fashion-color: #eeff41;
+
+$categories: coding $coding-color, general $general-color, photography $photography-color, lifestyle $lifestyle-color, producing $producing-color, sports $sports-color, fashion $fashion-color;
+
+@each $category in $categories {
+    $class-name: nth($category, 1);
+    $hex-value: nth($category, 2);
+    
+    li.#{$class-name} {
+        
+        &:hover {
+            border-color: #{$hex-value};
+        }
+    }
+    
+    h1.#{$class-name},
+    a.#{$class-name} {
+            color: $background-color;
+              background-color: #{$hex-value};
+          font-weight: bold;
+          text-transform: uppercase;
+
+          &:hover {
+              color: $background-color;
+              background-color: #{$hex-value};
+          }
+      }
+    
+    h1.#{$class-name} {
+        display: inline-block;
+        padding: 6px 8px;
+    }
+}
 // Width of the content area
 $content-width:    1000px;
 
 $on-palm:          760px;
 $on-laptop:        1024px;
-
-
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -88,8 +123,11 @@ $on-laptop:        1024px;
 @import
         "base",
         "layout",
+        "widget",
         "header",
         "content",
+        "postHeader",
         "spotlight",
+        "cards",
         "syntax-highlighting"
 ;

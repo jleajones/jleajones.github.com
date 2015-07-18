@@ -1,4 +1,6 @@
 .spotlight {
     padding-top: 10px;
-    margin-bottom: $spacing-unit;
+    padding-bottom: $spacing-unit;
+    
+    @include border(solid 1px $divider-color, bottom);
 }

@@ -1,0 +1,12 @@
+.post-header-img {
+    position: relative;
+    top: -34px;
+    z-index: -1;
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
+    @include border(solid 1px $divider-color, bottom);
+}

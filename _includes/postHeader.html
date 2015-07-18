@@ -1,0 +1,7 @@
+<div class="post-header">
+    <span><a href="/category/{{ include.category }}" class="{{ include.category }}">{{ include.category }}</a><span>
+    <h1>{{ include.title }}</h1>
+    <p>
+    {{ include.date | date: "%b %-d, %Y" }}{% if include.author %} • {{ include.author }}{% endif %}{% if include.meta %} • {{ include.meta }}{% endif %}
+    </p>
+</div>
