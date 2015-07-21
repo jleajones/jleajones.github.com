@@ -103,7 +103,7 @@ sections:
             - > # this means to ignore newlines until "next task:"
               participated in daily agile practices based on 2 week sprints using <a href="https://www.atlassian.com/software/jira" target="_blank">Jira</a> and a physical board to represent status of stories
             - > # this means to ignore newlines until "next task:"
-              collaborated with product, design, qa, business intelligence, and ad operation teams to meet goals, improve features, clarify requirments, and provide the best user experience
+              collaborated with product, design, qa, business intelligence, and ad operation teams to meet goals, improve features, clarify requirements, and provide the best user experience
             - > # this means to ignore newlines until "next task:"
               used <a href="http://www.lognormal.com/boomerang/doc/" target="_blank">the boomerang javascript library</a> to implement a custom <a href="https://en.wikipedia.org/wiki/Real_user_monitoring" target="_blank">RUM solution</a> for monitoring key metrics on About.com
             - > # this means to ignore newlines until "next task:"
@@ -127,7 +127,7 @@ sections:
           end_date: 2/13
           entries: 
             - > # this means to ignore newlines until "next task:"
-              used Drupal, JavaServer Pages, CSS, and jQuery to build and maintain multiple shopping comparison sites, mircosites, and content sites 
+              used Drupal, JavaServer Pages, CSS, and jQuery to build and maintain multiple shopping comparison sites, microsites, and content sites 
             - > # this means to ignore newlines until "next task:"
               worked closely with product and SEM team to implement A/B tests using a proprietary framework to improve SEM conversion and user experience
             - > # this means to ignore newlines until "next task:"
