@@ -22,10 +22,13 @@ section1: workhistory
                       {% endif %}
                        <ul>    
                        {% for entry in child.entries %}
-                           <li class="{% if forloop.index > 4 and section.name == 'skills' %}hidden{% endif %}">{{ entry }}</li>
-                            {% if section.name == 'skills' and forloop.last and forloop.length > 4 %}
+                           <!-- <li class="{% if forloop.index > 4 and section.name == 'skills' %}hidden{% endif %}"> -->
+                           <li>
+                               {{ entry }}
+                           </li>
+                            <!-- {% if section.name == 'skills' and forloop.last and forloop.length > 4 %}
                             <li class="more"><button>more</button></li>
-                            {% endif %}
+                            {% endif %} -->
                        {% endfor %}
                        </ul>
                    </li>
