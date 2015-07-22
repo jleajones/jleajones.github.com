@@ -15,6 +15,7 @@
                     margin-bottom: $spacing-unit * 2;
                     
                     @include border(solid 1px $divider-color, bottom);
+                    
                     img {
                         margin-bottom: $spacing-unit/2;
                     }

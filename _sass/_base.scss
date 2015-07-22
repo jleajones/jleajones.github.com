@@ -130,6 +130,9 @@ figure {
     > a {
         border: none;
         padding: 0;
+        &:hover {
+            background-color: transparent;
+        }
     }
 }
 
@@ -301,4 +304,16 @@ form {
 
 .no-list-style {
     list-style: none;
+}
+
+.tcs {
+    color: $text-color-secondary;
+}
+
+.tcd {
+    color: $text-color-disabled;
+}
+
+.ts {
+    font-size: $small-font-size * 0.9;
 }

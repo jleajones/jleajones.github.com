@@ -3,6 +3,7 @@ layout: post
 title: "Hello, World!"
 date: 2015-06-06 11:18:58
 category: general
+image: hello_world.png
 ---
 Hello World!
 

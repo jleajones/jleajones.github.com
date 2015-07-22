@@ -56,7 +56,7 @@ $categories: coding $coding-color, general $general-color, photography $photogra
     li.#{$class-name} {
         
         &:hover {
-            border-color: #{$hex-value};
+            border-color: #{$hex-value} !important;
         }
     }
     

@@ -9,19 +9,30 @@ layout: default
 
 <div class="wrapper">
     <div class="widget">
-        <h3>recent post</h3>
+        <h3>recent projects</h3>
         <ul class="cards no-list-style">
-            {% for post in site.posts | limit: 3 %} {% include postExcerpt.html post=post %} {% endfor %}
+            {% assign sorted_projects = site.projects | sort:'created' | reverse: %}
+            
+            {% for project in sorted_projects | limit: 3 %}
+                {% assign is_last = forloop.index | modulo: 3 %}
+                
+                {% include projectExcerpt.html project=project index=forloop.index last=is_last %}
+            {% endfor %}
         </ul>
 
-        <a href="/blog">See more &raquo;</a>
+        <a href="/projects">See all &raquo;</a>
     </div>
-    
-    <!--
-       <div class="widget">
-        <h3>recent projects</h3>
-        
-        <a href="/blog">See more &raquo;</a>
+
+    <div class="widget">
+        <h3>recent post</h3>
+        <ul class="cards no-list-style">
+            {% for post in site.posts | limit: 6 %}
+                {% assign is_last = forloop.index | modulo: 3 %}
+                
+                {% include postExcerpt.html post=post index=forloop.index last=is_last %}
+            {% endfor %}
+        </ul>
+
+        <a href="/blog">See all &raquo;</a>
     </div>
-    -->
 </div>

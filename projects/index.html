@@ -8,14 +8,9 @@ label: Projects
 
 <div class="projects">
     <ul class="content-list">
-        {% assign sorted_projects = site.projects | sort:'created' %}
+        {% assign sorted_projects = site.projects | sort:'created' | reverse: %}
         {% for project in sorted_projects %}
-        <li class="no-list-style">
-            <h2>
-              <a href="{{ project.url }}">{{ project.title }}</a>
-            </h2>
-            <p>{{ project.description }}</p>
-        </li>
+            {% include projectExcerpt.html project=project %}
         {% endfor %}
     </ul>
 </div>

@@ -14,13 +14,23 @@
         
         &:hover {
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.42);
+            @include border(solid 1px $accent-color);
+        }
+        
+        img {
+            @include border(solid 1px $divider-color, bottom);
         }
         
         figcaption {
             padding: 12px;
+            
+            > em {
+                margin: $spacing-unit/2 0;
+                display: block;
+            }
         }
         
-        &:last-child {
+        &.last {
             margin-right: 0px;
         }
         
