@@ -10,6 +10,12 @@
         margin-right: 5%;
         margin-bottom: $spacing-unit;
         background: #fff;
+            
+        transition-property: all;
+        transition-duration: .25s;
+        transition-timing-function: ease-in;
+        transition-delay: 0s;
+        
         @include border(solid 1px $divider-color);
         
         &:hover {

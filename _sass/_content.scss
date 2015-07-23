@@ -2,7 +2,8 @@
     margin-top: 65px;
     margin-bottom: $spacing-unit;
     .page,
-    .post {
+    .post,
+    .project{
         padding-top: 10px;
 
         .blog,
@@ -14,6 +15,12 @@
                     padding-bottom: $spacing-unit * 1.5;
                     margin-bottom: $spacing-unit * 2;
                     
+    
+                    transition-property: all;
+                    transition-duration: .25s;
+                    transition-timing-function: ease-in;
+                    transition-delay: 0s;
+                    
                     @include border(solid 1px $divider-color, bottom);
                     
                     img {
@@ -22,6 +29,10 @@
                     
                     h2 {
                         font-size: $base-font-size*1.75;
+                    }
+                    
+                    &:hover {
+                    @include border(solid 1px $accent-color, bottom);
                     }
                 }
             }

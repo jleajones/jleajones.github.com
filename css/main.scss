@@ -56,6 +56,14 @@ $categories: coding $coding-color, general $general-color, photography $photogra
     li.#{$class-name} {
         
         &:hover {
+            -webkit-transition-property: border-color;
+            transition-property: border-color;
+            -webkit-transition-duration: .1s;
+            transition-duration: .1s;
+            -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
             border-color: #{$hex-value} !important;
         }
     }

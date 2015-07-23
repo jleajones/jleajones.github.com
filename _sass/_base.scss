@@ -119,6 +119,7 @@ a {
     color: $link-color;
     text-decoration: none;
     padding: 2px 4px;
+    transition-property: background-color, color;
     transition: .2s;
     &:hover {
         color: #fff;
@@ -146,15 +147,15 @@ button {
     cursor: pointer;
     text-transform: uppercase;
     outline: none;
-    
-    -webkit-transition-property: box-shadow, background-color, color;
-    transition-property: box-shadow, background-color, color;
-    -webkit-transition-duration: .1s;
-    transition-duration: .1s;
+    -webkit-transition-property: background-color, color;
+    transition-property: background-color, color, box-shadow;
+    -webkit-transition-duration: .25s;
+    transition-duration: .25s;
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
+    
     &:hover {
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.42);
         background-color: $accent-color-dark;
