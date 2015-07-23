@@ -120,7 +120,7 @@ a {
     text-decoration: none;
     padding: 2px 4px;
     transition-property: background-color, color;
-    transition: .2s;
+    transition-duration: .25s;
     &:hover {
         color: #fff;
         background-color: $link-color-dark;
