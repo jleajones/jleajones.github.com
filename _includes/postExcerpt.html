@@ -9,7 +9,7 @@
                         <a href="{{ include.post.url | prepend: site.baseurl }}">{{ include.post.title | truncate: 40 }}</a>
                     </h2>
             <span class="tcd ts"><i class="fa fa-calendar"></i> {{ include.post.date | date: "%b %-d, %Y" }}</span>
-            <p>{{ include.post.excerpt | strip_html | strip_newlines | truncate: 65 }}</p>
+            <p>{{ include.post.excerpt | strip_html | strip_newlines | truncate: 63 }}</p>
         </figcaption>
     </figure>
 </li>
