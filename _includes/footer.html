@@ -6,39 +6,34 @@
 
         <ul class="contact-list">
             <li>{{ site.title }}</li>
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            <li><a href="/contact"><i class="fa fa-envelope fa-lg"></i> {{ site.email }}</a>
             </li>
         </ul>
 
         <ul class="social-media-list">
             {% if site.github_username %}
             <li>
-                <a href="https://github.com/{{ site.github_username }}" target="_blank">github
+                <a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github fa-lg"></i> github
             </a>
             </li>
             {% endif %} {% if site.twitter_username %}
             <li>
-                <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">twitter
+                <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fa fa-twitter fa-lg"></i> twitter
             </a>
             </li>
             {% endif %} {% if site.linkedin_username %}
             <li>
-                <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">linkedin
+                <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fa fa-linkedin fa-lg"></i> linkedin
             </a>
             </li>
             {% endif %} {% if site.instagram_username %}
             <li>
-                <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank">instagram
-            </a>
-            </li>
-            {% endif %} {% if site.facebook_username %}
-            <li>
-                <a href="https://facebook.com/{{ site.facebook_username }}" target="_blank">facebook
+                <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank"><i class="fa fa-instagram fa-lg"></i> instagram
             </a>
             </li>
             {% endif %} {% if site.soundcloud_username %}
             <li>
-                <a href="https://soundcloud.com/{{ site.soundcloud_username }}" target="_blank">soundcloud
+                <a href="https://soundcloud.com/{{ site.soundcloud_username }}" target="_blank"><i class="fa fa-soundcloud fa-lg"></i> soundcloud
             </a>
             </li>
             {% endif %}

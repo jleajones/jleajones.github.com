@@ -6,7 +6,7 @@ layout: default
     {{ content }}
 
    {% if page.url contains '/blog' %}
-       <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+       <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS <i class="fa fa-rss fa-lg"></i></a></p>
    {% endif %}
   </div>
 </div>

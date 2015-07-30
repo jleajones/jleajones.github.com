@@ -9,7 +9,7 @@ layout: default
 
 <div class="wrapper">
     <div class="widget">
-        <h3>recent projects</h3>
+        <h3><i class="fa fa-folder-open"></i> recent projects</h3>
         <ul class="cards no-list-style">
             {% assign sorted_projects = site.projects | sort:'created' | reverse: %}
             
@@ -24,7 +24,7 @@ layout: default
     </div>
 
     <div class="widget">
-        <h3>recent post</h3>
+        <h3><i class="fa fa-sticky-note"></i> recent post</h3>
         <ul class="cards no-list-style">
             {% for post in site.posts | limit: 6 %}
                 {% assign is_last = forloop.index | modulo: 3 %}

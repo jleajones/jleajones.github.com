@@ -1,0 +1,19 @@
+{
+  "name": "jleajones",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jleajones/jleajones.github.com",
+  "authors": [
+    "Jason Lea-Jones <jleajones@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.4.0"
+  }
+}
