@@ -6,10 +6,10 @@
         <figcaption>
             <span><a href="/category/{{ include.post.category }}" class="{{ include.post.category }}">{{ include.post.category }}</a></span>
             <h2>
-                        <a href="{{ include.post.url | prepend: site.baseurl }}">{{ include.post.title | truncate: 40 }}</a>
+                        <a href="{{ include.post.url | prepend: site.baseurl }}">{{ include.post.title | truncate: 35 }}</a>
                     </h2>
             <span class="tcd ts"><i class="fa fa-calendar"></i> {{ include.post.date | date: "%b %-d, %Y" }}</span>
-            <p>{{ include.post.excerpt | strip_html | strip_newlines | truncate: 63 }}</p>
+            <p>{{ include.post.excerpt | strip_html | strip_newlines | truncate: 65 }}</p>
         </figcaption>
     </figure>
 </li>
