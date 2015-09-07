@@ -27,7 +27,7 @@ module.exports = function (grunt) {
             bowerJS: {
                 expand: true,
                 cwd: 'bower_components/',
-                src: '**/**.min.js',
+                src: ['**/**.min.js', '!**/src/**'],
                 flatten: true,
                 dest: 'assets/vendor/js'
             },
