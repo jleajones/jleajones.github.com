@@ -29,7 +29,7 @@ module.exports = function (grunt) {
                 cwd: 'bower_components/',
                 src: '**/**.min.js',
                 flatten: true,
-                dest: 'assets/vendor/css'
+                dest: 'assets/vendor/js'
             },
             bowerFonts: {
                 expand: true,
@@ -39,6 +39,9 @@ module.exports = function (grunt) {
                 dest: 'assets/vendor/fonts/'
             }
         },
+        // TODO: add these task to improve performance
+        // concat:{css:{}, js:{}},
+        // minify: {js:{}},
         watch: {
             jekyll: {
                 files: ['**/*.html', '**/*.scss', 'assets/**/*', '**/*.md', '!README.md', '!_site/**/*'],

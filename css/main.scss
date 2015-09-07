@@ -46,8 +46,9 @@ $lifestyle-color: #d50000;
 $producing-color: #eeff41;
 $sports-color: #304ffe;
 $fashion-color: #6200ea;
+$music-color: #AEEA00;
 
-$categories: coding $coding-color, general $general-color, photography $photography-color, lifestyle $lifestyle-color, producing $producing-color, sports $sports-color, fashion $fashion-color;
+$categories: coding $coding-color, general $general-color, photography $photography-color, lifestyle $lifestyle-color, producing $producing-color, sports $sports-color, fashion $fashion-color, music $music-color;
 
 @each $category in $categories {
     $class-name: nth($category, 1);
