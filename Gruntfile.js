@@ -64,5 +64,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-exec');
 
-    grunt.registerTask('default', ['connect', 'copy', 'exec:build', 'watch']);
+    grunt.registerTask('serve', ['connect', 'copy', 'exec:build', 'watch']);
+    
+    //minify and combine js in assest dir
+    grunt.registerTask('build', ['copy', 'exec:build', 'watch']);
 };
