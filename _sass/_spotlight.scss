@@ -6,10 +6,10 @@
     background-position: center center;
     color: $white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
-    
     @include border(solid 10px $divider-color, bottom);
-    
     h1 {
         padding: 130px 0;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
     }
 }

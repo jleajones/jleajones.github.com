@@ -6,6 +6,7 @@ body > header {
     min-height: 56px;
     // Positioning context for the mobile navigation icon
     position: fixed;
+    z-index: 999;
     top: 0;
     width: 100%;
     @include box_shadow(0, 3px, 6px, 0, 0, 0, 0.42);
