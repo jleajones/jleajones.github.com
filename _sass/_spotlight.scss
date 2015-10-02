@@ -1,6 +1,15 @@
 .spotlight {
     padding-top: 10px;
     padding-bottom: $spacing-unit;
+    background: url(/assets/images/css/jumbotron_bg.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: $white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
     
-    @include border(solid 1px $divider-color, bottom);
+    @include border(solid 10px $divider-color, bottom);
+    
+    h1 {
+        padding: 130px 0;
+    }
 }
