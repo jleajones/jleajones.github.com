@@ -3,7 +3,7 @@
  */
 body > header {
     background-color: $primary-color;
-    min-height: 56px;
+    min-height: 43px;
     // Positioning context for the mobile navigation icon
     position: fixed;
     z-index: 999;
@@ -13,7 +13,7 @@ body > header {
     @include border(5px solid $primary-color-dark, top);
     .site-title {
         font-size: 26px;
-        line-height: 56px;
+        line-height: 43px;
         letter-spacing: -1px;
         margin-bottom: 0;
         float: left;
@@ -26,15 +26,15 @@ body > header {
     }
     nav {
         float: right;
-        line-height: 56px;
+        line-height: 43px;
         .menu-icon {
             display: none;
         }
         .page-link {
             color: #fdfdfd;
             display: inline-block;
-            height: 60px;
-            line-height: 60px;
+            height: 47px;
+            line-height: 47px;
             padding: 0 16px;
         }
         @include media-query($on-palm) {

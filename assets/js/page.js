@@ -7,5 +7,7 @@ var page = (function() {
     });
     page.tracker.track();
     
+    page.forms = Form.createForms();
+    
     return page;
 }());

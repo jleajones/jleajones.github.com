@@ -7,22 +7,31 @@ label: Contact
 <h1>{{ page.label }}</h1>
 
 <div class="contact">
-    <p>I'm currently not looking for another 9-5, but I'm always down for taking on some intersting freelance projects, hacking away at a cool idea, traveling, drinking, making music, learning and meeting fun people.  If you can relate to any of that hit me up on social media or using the form below.  Peace!</p>
-    <form>
+    <p>I'm currently not looking for another 9-5, but I'm always down for taking on some intersting freelance projects, hacking away at a cool idea, traveling, drinking, making music, learning and meeting fun people. If you can relate to any of that hit me up on social media or using the form below. Peace!</p>
+    <form name="contact-form" id="contact-form" novalidate>
         <div>
+            <div class="error required alert">This field is required. <span class="close"><i class="fa fa-close"></i></span></div>
             <label for="c_name">name:</label>
-            <input id="c_name" type="text" name="c_name" placeholder="Enter your name..."/>
+            <input id="c_name" type="text" name="c_name" placeholder="Enter your name..." class="required" />
         </div>
         <div>
+            <div class="error required alert">This field is required. <span class="close"><i class="fa fa-close"></i></span></div>
+            <div class="error valid alert">You did not enter a valid email. <span class="close"><i class="fa fa-close"></i></span></div>
             <label for="c_email">email:</label>
-            <input id="c_email" type="email" name="c_email" placeholder="Enter your email address..."/>
+            <input id="c_email" type="email" name="c_email" placeholder="Enter your email address..." class="required" />
         </div>
         <div>
+            <div class="error required alert">This field is required. <span class="close"><i class="fa fa-close"></i></span></div>
             <label for="c_msg">message:</label>
-            <textarea id="c_msg" name="c_msg" placeholder="Enter your message..."></textarea>
+            <textarea id="c_msg" name="c_msg" placeholder="Enter your message..." class="required"></textarea>
         </div>
         <div>
-            <button>submit</button>
+            <button class="submit-button">submit</button>
         </div>
     </form>
+    <div class="success alert">
+        <span class="close"><i class="fa fa-close"></i></span>
+        <h2><i class="fa fa-check fa-2x"></i> Thanks for your submission!</h2>
+        <h4>Someone will be in contact shortly.</h4>
+    </div>
 </div>
