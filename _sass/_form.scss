@@ -1,0 +1,13 @@
+form {
+    .required-error {
+        .required {
+            display:block;
+        }
+    }
+    
+    .valid-error {
+        .valid {
+            display: block;
+        }
+    }
+}

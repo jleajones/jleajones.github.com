@@ -1,0 +1,26 @@
+.alert {
+    display: none;
+    .close {
+        position: absolute;
+        top: 0px;
+        right: 4px;
+        cursor: pointer;
+    }
+    &.error {
+        background: #FFCDD2;
+        border: solid 2px #E53935;
+        padding: 8px 12px;
+        color: #E53935;
+        position: relative;
+        text-align: center;
+    }
+    &.success {
+        text-align: center;
+        padding: 8px 12px;
+        border: solid 2px #64DD17;
+        background: #DCEDC8;
+        color: #64DD17;
+        position: relative;
+        top: -450px;
+    }
+}
