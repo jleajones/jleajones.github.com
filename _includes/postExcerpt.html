@@ -1,4 +1,4 @@
-<li class="animate {{ include.post.category }} {%if include.index > 1 and include.last  == 0 %}last{% endif %}" data-text="{{ include.post.excerpt | strip_html | strip_newlines }}" data-url="{{ include.post.url | prepend: site.baseurl }}">
+<li class="animate {{ include.post.category }} {%if include.index > 1 and include.last  == 0 %}last{% endif %}" data-text="{{ include.post.excerpt | escape | strip_newlines }}" data-url="{{ include.post.url | prepend: site.baseurl }}">
     <figure>
         {% if include.post.image %}
         <a href="{{ include.post.url | prepend: site.baseurl }}"><img src="/assets/images/{{ include.post.image }}" class="{{ include.imageClass }}"/></a> {% endif %}
@@ -12,7 +12,7 @@
             {% if include.truncate %}
                 <p>{{ include.post.excerpt | strip_html | strip_newlines | truncate: 65 }}</p>
             {% else %}
-                <p>{{ include.post.excerpt | strip_html | strip_newlines }}</p>
+                <p>{{ include.post.excerpt | strip_newlines }}</p>
             {% endif %}
             
         </figcaption>

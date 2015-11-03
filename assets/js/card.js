@@ -22,7 +22,7 @@ Card.fx._bind = function() {
 };
 
 Card.fx.onHandler = function () {
-    this.$text.text(this.fullText);
+    this.$text.html(this.fullText);
     $('<a href="' + this.url + '" class="read-more">Read More &raquo;</a>').insertAfter(this.$text);
 };
 
