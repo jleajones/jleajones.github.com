@@ -37,6 +37,10 @@
             }
         }
         
+        h2 > a {
+            display: table-cell;
+        }
+        
         img {
             @include border(solid 1px $divider-color, bottom);
         }
