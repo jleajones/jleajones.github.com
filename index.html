@@ -29,7 +29,7 @@ layout: default
             {% for post in site.posts | limit: 6 %}
                 {% assign is_last = forloop.index | modulo: 3 %}
                 
-                {% include postExcerpt.html post=post index=forloop.index last=is_last %}
+                {% include postExcerpt.html post=post index=forloop.index last=is_last truncate=true %}
             {% endfor %}
         </ul>
 

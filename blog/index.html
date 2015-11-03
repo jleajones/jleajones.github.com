@@ -8,6 +8,6 @@ label: Blog
 
 <div class="blog">
     <ul class="content-list no-list-style">
-        {% for post in site.posts %} {% include postExcerpt.html post=post %} {% endfor %}
+        {% for post in site.posts %} {% include postExcerpt.html post=post truncate=false %} {% endfor %}
     </ul>
 </div>

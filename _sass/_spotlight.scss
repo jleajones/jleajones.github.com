@@ -12,4 +12,11 @@
         -webkit-animation-duration: 1.5s;
         animation-duration: 1.5s;
     }
+    
+        
+    @include media-query($on-palm) {
+        h1 {
+            font-size: 1.5em;
+        }
+    }
 }

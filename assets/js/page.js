@@ -8,6 +8,7 @@ var page = (function() {
     page.tracker.track();
     
     page.forms = Form.createForms();
+    page.cards = Card.createCards();
     
     return page;
 }());
