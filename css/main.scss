@@ -90,7 +90,12 @@ $categories: coding $coding-color, general $general-color, photography $photogra
 // Width of the content area
 $content-width:    1000px;
 
-$on-palm:          760px;
+//iphone 5
+$on-palm:          320px;
+
+//iphone 6
+$on-palm-lg:       415px;
+
 $on-laptop:        1024px;
 
 // Using media queries with like this:

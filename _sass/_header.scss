@@ -37,7 +37,10 @@ body > header {
             line-height: 47px;
             padding: 0 16px;
         }
-        @include media-query($on-palm) {
+       
+        
+        
+        @include media-query($on-palm-lg) {
             position: absolute;
             top: 16px;
             right: 30px;
