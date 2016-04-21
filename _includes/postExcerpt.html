@@ -10,9 +10,10 @@
                     </h2>
             <span class="tcd ts"><i class="fa fa-calendar"></i> {{ include.post.date | date: "%b %-d, %Y" }}</span>
             {% if include.truncate %}
-                <p>{{ include.post.excerpt | strip_html | strip_newlines | truncate: 65 }}</p>
+                <p>{{ include.post.excerpt | strip_html | strip_newlines | truncate: 65 | remove: '<p>' | remove: '</p>'}}</p>
             {% else %}
-                <p>{{ include.post.excerpt | strip_newlines }}</p>
+                <p>{{ include.post.excerpt | strip_newlines | remove: '<p>' | remove: '</p>'}}</p>
+                <p><a href="{{ include.post.url | prepend: site.baseurl }}">Read more...</a></p>
             {% endif %}
             
         </figcaption>
