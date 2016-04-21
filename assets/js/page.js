@@ -9,6 +9,9 @@ var page = (function() {
     
     page.forms = Form.createForms();
     page.cards = Card.createCards();
+    page.sliders = Slider.createSliders();
     
     return page;
 }());
+
+console.log(page);

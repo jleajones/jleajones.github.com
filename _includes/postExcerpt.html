@@ -6,7 +6,7 @@
         <figcaption>
             <span><a href="/category/{{ include.post.category }}" class="{{ include.post.category }}">{{ include.post.category }}</a></span>
             <h2>
-                        <a href="{{ include.post.url | prepend: site.baseurl }}">{{ include.post.title | truncate: 35 }}</a>
+                        <a href="{{ include.post.url | prepend: site.baseurl }}" title="{{ include.post.title | escape }}">{{ include.post.title | truncate: 35 }}</a>
                     </h2>
             <span class="tcd ts"><i class="fa fa-calendar"></i> {{ include.post.date | date: "%b %-d, %Y" }}</span>
             {% if include.truncate %}

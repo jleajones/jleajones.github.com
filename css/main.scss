@@ -11,6 +11,7 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     20px;
+$large-spacing-unit:	55px;
 
 $background-color: #fdfdfd;
 
@@ -39,16 +40,16 @@ $accent-color-dark: #FFC400;
 $link-color: $accent-color;
 $link-color-dark: $accent-color-dark;
 
-$coding-color: #00b8d4;
+$coding-color: #304ffe;
 $general-color: #9E9E9E;
-$photography-color: #00c853;
+$photography-color: #ff6d00;
 $lifestyle-color: #d50000;
-$producing-color: #eeff41;
-$sports-color: #304ffe;
+$travel-color: #00b8d4;
+$sports-color: #00c853;
 $fashion-color: #6200ea;
 $music-color: #AEEA00;
 
-$categories: coding $coding-color, general $general-color, photography $photography-color, lifestyle $lifestyle-color, producing $producing-color, sports $sports-color, fashion $fashion-color, music $music-color;
+$categories: coding $coding-color, general $general-color, photography $photography-color, lifestyle $lifestyle-color, travel $travel-color, sports $sports-color, fashion $fashion-color, music $music-color;
 
 @each $category in $categories {
     $class-name: nth($category, 1);
