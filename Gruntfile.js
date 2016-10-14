@@ -34,6 +34,12 @@ module.exports = function (grunt) {
 				    'assets/vendor/scripts.min.js': ['assets/vendor/js/jquery.min.js',
 					    'assets/vendor/js/jquery.animatecss.min.js']
 			    }
+		    },
+		    scripts: {
+		    	files: {
+		    		'assets/js/scripts.min.js': ['assets/js/form.js',
+					    'assets/js/tracker.js', 'assets/js/page.js']
+			    }
 		    }
 	    },
         copy: {
