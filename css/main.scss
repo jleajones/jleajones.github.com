@@ -3,148 +3,62 @@
 ---
 @charset "utf-8";
 
-// Our variables
-$base-font-family: 'Roboto', Arial, sans-serif;
-$heading-font-family: 'Roboto Slab', serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     20px;
-$large-spacing-unit:	55px;
-
-$background-color: #fdfdfd;
-
-$black: #000000;
-$text-color: lighten($black, 13%);
-$icon-color: lighten($black, 46%);
-$text-color-secondary: lighten($black, 46%);
-$text-color-disabled: lighten($black, 74%);
-$divider-color: lighten($black, 88%);
-
-$white: #ffffff;
-$text-color-light: $white;
-$icon-color-light: $white;
-$text-color-secondary-light: darken($white, 30%);
-$text-color-disabled-light: darken($white, 70%);
-$divider-color-light: darken($white, 88%);
-
-$primary-color: #009688;
-$primary-color-light: #B2DFDB;
-$primary-color-dark: #00695C;
-
-$accent-color: #FFD740;
-$accent-color-light: #FFE57F;
-$accent-color-dark: #FFC400;
-
-$link-color: $accent-color;
-$link-color-dark: $accent-color-dark;
-
-$coding-color: #304ffe;
-$general-color: #9E9E9E;
-$photography-color: #ff6d00;
-$lifestyle-color: #d50000;
-$travel-color: #00b8d4;
-$sports-color: #00c853;
-$fashion-color: #6200ea;
-$music-color: #AEEA00;
-
-$categories: coding $coding-color, general $general-color, photography $photography-color, lifestyle $lifestyle-color, travel $travel-color, sports $sports-color, fashion $fashion-color, music $music-color;
+@import
+"variables",
+"mixins";
 
 @each $category in $categories {
-    $class-name: nth($category, 1);
-    $hex-value: nth($category, 2);
-    
-    li.#{$class-name} {
-        
-        &:hover {
-            -webkit-transition-property: border-color;
-            transition-property: border-color;
-            -webkit-transition-duration: .1s;
-            transition-duration: .1s;
-            -webkit-transition-timing-function: ease-in;
-            transition-timing-function: ease-in;
-            -webkit-transition-delay: 0s;
-            transition-delay: 0s;
-            border-color: #{$hex-value} !important;
-        }
-    }
-    
-    h1.#{$class-name},
-    a.#{$class-name} {
-            color: $background-color;
-              background-color: #{$hex-value};
-          font-weight: bold;
-          text-transform: uppercase;
+	$class-name: nth($category, 1);
+	$hex-value: nth($category, 2);
 
-          &:hover {
-              color: $background-color;
-              background-color: #{$hex-value};
-          }
-      }
-    
-    h1.#{$class-name} {
-        display: inline-block;
-        padding: 6px 8px;
-    }
-}
-// Width of the content area
-$content-width:    1000px;
+	li.#{$class-name} {
 
-//iphone 5
-$on-palm:          320px;
+		&:hover {
+			-webkit-transition-property: border-color;
+			transition-property: border-color;
+			-webkit-transition-duration: .1s;
+			transition-duration: .1s;
+			-webkit-transition-timing-function: ease-in;
+			transition-timing-function: ease-in;
+			-webkit-transition-delay: 0s;
+			transition-delay: 0s;
+			border-color: #{$hex-value} !important;
+		}
+	}
 
-//iphone 6
-$on-palm-lg:       415px;
+	h1.#{$class-name},
+	a.#{$class-name} {
+		color: $background-color;
+		background-color: #{$hex-value};
+		font-weight: bold;
+		text-transform: uppercase;
 
-$on-laptop:        1024px;
+		&:hover {
+			color: $background-color;
+			background-color: #{$hex-value};
+		}
+	}
 
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
-
-@mixin border($style, $sides...){
-    @if ($style) {
-        @if (length($sides) > 0) {
-            @each $side in $sides {
-                @if ($side == 'top' or $side == 'right' or $side == 'bottom' or $side == 'left') {
-                    border-#{$side}: $style;
-                }
-            }
-        } @else {
-            border: $style;
-        }
-    }
-}
-
-@mixin box_shadow($x, $y, $blur, $r, $g, $b, $a){
-    box-shadow: $x $y $blur rgba($r, $g, $b, $a);
+	h1.#{$class-name} {
+		display: inline-block;
+		padding: 6px 8px;
+	}
 }
 
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "form",
-        "alert",
-        "widget",
-        "header",
-        "content",
-        "postHeader",
-        "spotlight",
-        "cards",
-        "syntax-highlighting"
+"base",
+"layout",
+"displayAds",
+"form",
+"alert",
+"widget",
+"header",
+"content",
+"postHeader",
+"spotlight",
+"cards",
+"syntax-highlighting"
 ;

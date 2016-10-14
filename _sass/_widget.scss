@@ -2,11 +2,26 @@
     padding: $large-spacing-unit 0;
     @include border(solid 1px $divider-color, bottom);
     h3 {
-        font-size: $base-font-size * 1.5;
+	    @include font-size($font-size * 1.5);
         color: $text-color-disabled;
+        margin-bottom: 45px;
+        text-align: center;
     }
+	
+	h2 {
+		@include font-size($font-size);
+	}
+	
+	em,
+	span {
+		@include font-size($font-size * 0.65);
+	}
 	
 	&:last-of-type {
 		border: none;
+	}
+	
+	.row:first-of-type {
+		margin-bottom: $large-spacing-unit;
 	}
 }

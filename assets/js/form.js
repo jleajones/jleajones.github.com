@@ -1,3 +1,8 @@
+/**
+ *
+ * @param $form
+ * @constructor
+ */
 function Form($form) {
     this.$form = $form;
     this.$inputs = this.$form.find(':input').not('button, :input[type=button], :input[type=submit], :input[type=reset]');
@@ -12,6 +17,7 @@ function Form($form) {
 
 Form.fx = Form.prototype;
 
+
 Form.fx.initialize = function () {
 
     //if there is no submit button, return;
@@ -20,6 +26,10 @@ Form.fx.initialize = function () {
     this.$form.on('submit', $.proxy(this.validate, this));
 };
 
+/**
+ *
+ * @param e
+ */
 Form.fx.validate = function (e) {
     //prevent user triggered submit
     e.preventDefault();
@@ -86,6 +96,11 @@ Form.fx.focus = function () {
     });
 };
 
+/**
+ *
+ * @param context
+ * @returns {Array}
+ */
 Form.createForms = function (context) {
     var $context = context || $('body'),
         forms = [];

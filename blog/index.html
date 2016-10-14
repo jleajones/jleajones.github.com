@@ -6,7 +6,7 @@ label: Blog
 ---
 <h1><i class="fa fa-rss"></i> {{ page.label }}</h1>
 
-<div class="blog">
+<div class="list-container">
     <ul class="content-list no-list-style">
         {% for post in site.posts %} {% include postExcerpt.html post=post truncate=false %} {% endfor %}
     </ul>

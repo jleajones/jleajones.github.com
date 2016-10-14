@@ -1,0 +1,38 @@
+.ad {
+	span.advertisement {
+		//@include font-size($base-font-size * 0.8);
+		color:#ccc;
+	}
+
+	.ad-container {
+		margin: 0 auto;
+
+		> .ad-wrapper {
+			border: solid 1px #ccc;
+		}
+	}
+
+	&.leaderboard {
+		background: $divider-color;
+		padding: 10px 0 14px;
+
+		> .ad-container {
+			max-width: 728px;
+
+			> .ad-wrapper {
+				max-height: 90px;
+			}
+		}
+	}
+
+	&.billboard {
+		> .ad-container {
+			max-width: 300px;
+
+			> .ad-wrapper {
+				max-height: 250px;
+			}
+		}
+	}
+}
+

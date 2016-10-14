@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="layout">
     <a href="/blog">&laquo; Back to blog</a> 
     {% if page.image %}
     <div class="post-header-img">
@@ -9,13 +9,31 @@ layout: default
     </div>
     {% endif %}
 
-    <div class="wrapper">
-        {% include postHeader.html category=page.category title=page.title date=page.date author=page.author meta=page.meta %}
+    <div class="container">
+        <section class="row">
+            <article class="eight columns">
+                {% include postHeader.html category=page.category title=page.title date=page.date author=page.author meta=page.meta %}
 
+                {{ content }}
+            </article>
+            <aside class="four columns">
 
-
-        <article>
-            {{ content }}
-        </article>
+            </aside>
+        </section>
     </div>
 </div>
+
+<!--<script type="text/javascript">-->
+    <!--amzn_assoc_placement = "adunit0";-->
+    <!--amzn_assoc_enable_interest_ads = "true";-->
+    <!--amzn_assoc_tracking_id = "cm0b2-20";-->
+    <!--amzn_assoc_ad_mode = "auto";-->
+    <!--amzn_assoc_ad_type = "smart";-->
+    <!--amzn_assoc_marketplace = "amazon";-->
+    <!--amzn_assoc_region = "US";-->
+    <!--amzn_assoc_linkid = "019cf4e9e96975d94f92a31c43da9d40";-->
+    <!--amzn_assoc_emphasize_categories = "283155,13900861,13900871,172282,301668,229534,3375251";-->
+    <!--amzn_assoc_fallback_mode = {"type":"search","value":"mens fashion"};-->
+    <!--amzn_assoc_default_category = "All";-->
+<!--</script>-->
+<!--<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>-->

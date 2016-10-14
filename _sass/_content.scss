@@ -1,14 +1,20 @@
 .page-content {
-    margin-top: 46px;
     margin-bottom: $spacing-unit;
-    .page,
-    .post,
-    .project{
+	
+	// TODO: create mixin
+	background: -webkit-linear-gradient($background-color, $white);
+	background: -o-linear-gradient($background-color, $white);
+	background: -moz-linear-gradient($background-color, $white);
+	background: linear-gradient($background-color, $white);
+    .layout {
         padding-top: 10px;
+	    
+	    > a {
+		    position: relative;
+		    z-index: 1;
+	    }
 
-        .blog,
-        .projects,
-        .category {
+        .list-container {
             ul.content-list {
                 margin: 0;
                 li {

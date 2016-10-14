@@ -16,11 +16,32 @@ module.exports = function (grunt) {
                 }
             }
         },
+	    clean: ['assets/vendor/*'],
+	    cssmin: {
+		    options: {
+			    shorthandCompacting: false,
+			    roundingPrecision: -1
+		    },
+		    target: {
+			    files: {
+			    	'assets/vendor/styles.min.css': ['assets/vendor/**/*.css']
+			    }
+		    }
+	    },
+	    uglify: {
+		    vendor: {
+			    files: {
+				    'assets/vendor/scripts.min.js': ['assets/vendor/js/jquery.min.js',
+					    'assets/vendor/js/jquery.animatecss.min.js']
+			    }
+		    }
+	    },
         copy: {
             bowerCSS: {
                 expand: true,
                 cwd: 'bower_components/',
-                src: '**/**.min.css',
+                src: ['**/*.css', '!**/*.min.css', '!**/animate.css', '**/animate.css/animate.css', '!**/animate.css/source/**'],
+	            filter: 'isFile',
                 flatten: true,
                 dest: 'assets/vendor/css'
             },
@@ -36,12 +57,9 @@ module.exports = function (grunt) {
                 cwd: 'bower_components/',
                 src: '**/fonts/**',
                 flatten: true,
-                dest: 'assets/vendor/fonts/'
+                dest: 'assets/fonts/'
             }
         },
-        // TODO: add these task to improve performance
-        // concat:{css:{}, js:{}},
-        // minify: {js:{}},
         watch: {
             jekyll: {
                 files: ['**/*.html', '**/*.scss', 'assets/**/*', '**/*.md', '!README.md', '!_site/**/*'],
@@ -57,15 +75,15 @@ module.exports = function (grunt) {
             }
         }
     });
-
+	
+	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-exec');
 
-    grunt.registerTask('serve', ['connect', 'copy', 'exec:build', 'watch']);
-    
-    //minify and combine js in assest dir
-    grunt.registerTask('build', ['copy', 'exec:build', 'watch']);
+    grunt.registerTask('serve', ['clean', 'connect', 'copy', 'cssmin', 'uglify', 'exec:build', 'watch']);
+    grunt.registerTask('build', ['clean', 'copy', 'cssmin', 'uglify', 'exec:build']);
 };

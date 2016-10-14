@@ -24,6 +24,10 @@ body > header {
             color: $accent-color;
         }
     }
+
+    & + div:first-of-type {
+        margin-top: 52px;
+    }
     nav {
         float: right;
         line-height: 43px;
@@ -49,7 +53,6 @@ body > header {
             border-radius: 5px;
             text-align: right;
             .page-link {
-                line-height: $base-line-height;
                 height: auto;
                 display: inline;
             }
@@ -86,4 +89,6 @@ body > header {
             }
         }
     }
+
+
 }

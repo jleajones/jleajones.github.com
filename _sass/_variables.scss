@@ -1,0 +1,62 @@
+// Our variables
+$base-font-family: 'Roboto', Arial, sans-serif;
+$heading-font-family: 'Roboto Slab', serif;
+$base-font-size:   14px;
+$base-line-height: 28px;
+
+$small-font-size:  $base-font-size * 0.875;
+$font-size: $base-font-size * 1.5;
+
+$spacing-unit:     20px;
+$large-spacing-unit:	55px;
+
+$background-color: #fdfdfd;
+
+$black: #000000;
+$text-color: lighten($black, 13%);
+$icon-color: lighten($black, 46%);
+$text-color-secondary: lighten($black, 46%);
+$text-color-disabled: lighten($black, 74%);
+$divider-color: lighten($black, 88%);
+
+$white: #ffffff;
+$text-color-light: $white;
+$icon-color-light: $white;
+$text-color-secondary-light: darken($white, 30%);
+$text-color-disabled-light: darken($white, 70%);
+$divider-color-light: darken($white, 88%);
+
+$primary-color: #009688;
+$primary-color-light: #B2DFDB;
+$primary-color-dark: #00695C;
+
+$accent-color: #FFD740;
+$accent-color-light: #FFE57F;
+$accent-color-dark: #FFC400;
+
+$link-color: $accent-color;
+$link-color-dark: $accent-color-dark;
+
+$coding-color: #304ffe;
+$general-color: #9E9E9E;
+$photography-color: #ff6d00;
+$lifestyle-color: #d50000;
+$travel-color: #00b8d4;
+$sports-color: #00c853;
+$fashion-color: #6200ea;
+$music-color: #AEEA00;
+
+$categories: coding $coding-color, general $general-color, photography $photography-color, lifestyle $lifestyle-color, travel $travel-color, sports $sports-color, fashion $fashion-color, music $music-color;
+
+
+//TODO: GRID REPLACEMENT
+// Width of the content area
+$content-width:    1000px;
+
+//iphone 5
+$on-palm:          320px;
+
+//iphone 6
+$on-palm-lg:       415px;
+
+$on-laptop:        1024px;

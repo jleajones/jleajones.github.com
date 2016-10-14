@@ -30,12 +30,11 @@ figure {
 
 body {
     font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
-    background-color: $background-color;
+	background: $white;
     -webkit-text-size-adjust: 100%;
+	@include font-size($font-size);
 }
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -81,9 +80,6 @@ figure > img {
     display: block;
 }
 
-figcaption {
-    font-size: $small-font-size;
-}
 /**
  * Lists
  */
@@ -159,6 +155,7 @@ button {
     &:hover {
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.42);
         background-color: $accent-color-dark;
+	    border: solid 2px $accent-color-dark !important;
         color: #fff;
     }
     
@@ -253,7 +250,7 @@ form {
 
 .wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width: calc(#{$content-width} - (# {$spacing-unit} * 2));
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;

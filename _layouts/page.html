@@ -1,12 +1,20 @@
 ---
 layout: default
 ---
-<div class="page">
-  <div class="wrapper">
-    {{ content }}
+<div class="layout">
+  <div class="container">
+      <section class="row">
+          <article class="eight columns">
+              {{ content }}
 
-   {% if page.url contains '/blog' %}
-       <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS <i class="fa fa-rss fa-lg"></i></a></p>
-   {% endif %}
+              {% if page.url contains '/blog' %}
+              <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS <i class="fa fa-rss fa-lg"></i></a></p>
+              {% endif %}
+          </article>
+          <aside class="four columns">
+
+          </aside>
+      </section>
+
   </div>
 </div>

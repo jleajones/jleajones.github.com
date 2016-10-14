@@ -3,7 +3,7 @@ layout: page
 ---
 <h1 class="{{ page.category }}">{{ page.category }}</h1>
 
-<div class="category">
+<div class="list-container">
     <ul class="content-list no-list-style">
         {% for post in site.categories[page.category] %} {% include postExcerpt.html post=post %} {% endfor %}
     </ul>

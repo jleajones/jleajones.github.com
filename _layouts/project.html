@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="project">
+<div class="layout">
     <a href="/lab">&laquo; Back to projects</a> 
     {% if page.image %}
     <div class="post-header-img">
@@ -9,14 +9,16 @@ layout: default
     </div>
     {% endif %}
 
-    <div class="wrapper">
-        {% include postHeader.html title=page.title meta=page.tech %}
+    <div class="container">
+        <section class="row">
+            <article class="eight columns">
+                {% include postHeader.html title=page.title meta=page.tech %}
 
+                {{ content }}
+            </article>
+            <aside class="four columns">
 
-
-        <article>
-            <p>{{ page.description }}</p>
-            {{ content }}
-        </article>
+            </aside>
+        </section>
     </div>
 </div>
