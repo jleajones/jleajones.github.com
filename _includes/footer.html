@@ -1,48 +1,48 @@
-<footer class="site-footer">
-
-    <div class="wrapper">
-
+<footer>
+    <div class="container">
         <!--    <h2 class="footer-heading">{{ site.title }}</h2>-->
 
-        <ul class="contact-list">
-            <li>{{ site.title }}</li>
-            <li><a href="/contact"><i class="fa fa-envelope fa-lg"></i> {{ site.email }}</a>
-            </li>
-        </ul>
+        <!--<ul class="contact-list">-->
+            <!--<li>{{ site.title }}</li>-->
+            <!--<li><a href="/contact"><i class="fa fa-envelope fa-lg"></i> {{ site.email }}</a>-->
+            <!--</li>-->
+        <!--</ul>-->
 
-        <ul class="social-media-list">
-            {% if site.github_username %}
-            <li>
-                <a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github fa-lg"></i> github
-            </a>
-            </li>
-            {% endif %} {% if site.twitter_username %}
-            <li>
-                <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fa fa-twitter fa-lg"></i> twitter
-            </a>
-            </li>
-            {% endif %} {% if site.linkedin_username %}
-            <li>
-                <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fa fa-linkedin fa-lg"></i> linkedin
-            </a>
-            </li>
-            {% endif %} {% if site.instagram_username %}
-            <li>
-                <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank"><i class="fa fa-instagram fa-lg"></i> instagram
-            </a>
-            </li>
-            {% endif %} {% if site.soundcloud_username %}
-            <li>
-                <a href="https://soundcloud.com/{{ site.soundcloud_username }}" target="_blank"><i class="fa fa-soundcloud fa-lg"></i> soundcloud
-            </a>
-            </li>
-            {% endif %}
-        </ul>
-
-
-        <p class="text">{{ site.description }}</p>
-
-
+        <div class="row">
+            <div class="columns five">
+                <p>&copy; 2016 careyMarcel.  All Rights Reserved</p>
+            </div>
+            <div class="columns seven">
+                <ul class="u-pull-right">
+                    {% if site.github_username %}
+                    <li>
+                        <a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github fa-lg"></i> github
+                        </a>
+                    </li>
+                    {% endif %} {% if site.twitter_username %}
+                    <li>
+                        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fa fa-twitter fa-lg"></i> twitter
+                        </a>
+                    </li>
+                    {% endif %} {% if site.linkedin_username %}
+                    <li>
+                        <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fa fa-linkedin fa-lg"></i> linkedin
+                        </a>
+                    </li>
+                    {% endif %} {% if site.instagram_username %}
+                    <li>
+                        <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank"><i class="fa fa-instagram fa-lg"></i> instagram
+                        </a>
+                    </li>
+                    {% endif %} {% if site.soundcloud_username %}
+                    <li>
+                        <a href="https://soundcloud.com/{{ site.soundcloud_username }}" target="_blank"><i class="fa fa-soundcloud fa-lg"></i> soundcloud
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
     </div>
 </footer>
 
@@ -65,5 +65,5 @@
 
 
 
-<script type="text/javascript" src="{{ "/assets/vendor/scripts.min.js " | prepend: site.baseurl }}"></script>
-<script type="text/javascript" src="{{ "/assets/js/scripts.min.js" | prepend: site.baseurl }}"></script>
+<script type='text/javascript' src='{{ "/assets/vendor/scripts.min.js " | prepend: site.baseurl }}'></script>
+<script type='text/javascript' src='{{ "/assets/js/scripts.min.js" | prepend: site.baseurl }}'></script>

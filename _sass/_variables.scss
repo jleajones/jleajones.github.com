@@ -48,15 +48,10 @@ $music-color: #AEEA00;
 
 $categories: coding $coding-color, general $general-color, photography $photography-color, lifestyle $lifestyle-color, travel $travel-color, sports $sports-color, fashion $fashion-color, music $music-color;
 
-
-//TODO: GRID REPLACEMENT
 // Width of the content area
 $content-width:    1000px;
 
-//iphone 5
+// Breakpoints
 $on-palm:          320px;
-
-//iphone 6
-$on-palm-lg:       415px;
-
+$on-palm-lg:       768px;
 $on-laptop:        1024px;

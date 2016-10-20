@@ -1,0 +1,19 @@
+<div class="widget">
+    <h3><i class="fa {{ include.icon }}"></i> {{ include.heading }}</h3>
+
+    <div class="row">
+        {% for post in include.posts | limit: include.max %}
+
+            <div class="columns {{ include.col}}">
+                {% include postExcerpt.html post=post index=forloop.index truncate=true %}
+            </div>
+
+            {% if forloop.index == include.break %}
+                </div>
+                <div class="row">
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <a href="/blog">See all &raquo;</a>
+</div>

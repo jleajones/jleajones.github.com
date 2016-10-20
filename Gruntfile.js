@@ -69,13 +69,19 @@ module.exports = function (grunt) {
         watch: {
             jekyll: {
                 files: ['**/*.html', '**/*.scss', 'assets/**/*', '**/*.md', '!README.md', '!_site/**/*'],
-                tasks: ['exec:build'],
+                tasks: ['exec:deploy'],
                 options: {
                     livereload: true
                 }
             }
         },
         exec: {
+        	install: {
+        	    cmd: 'bundle install'
+	        },
+        	deploy: {
+        	    cmd: 'jekyll build --drafts'
+	        },
             build: {
                 cmd: 'jekyll build'
             }
@@ -90,6 +96,6 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('serve', ['clean', 'connect', 'copy', 'cssmin', 'uglify', 'exec:build', 'watch']);
-    grunt.registerTask('build', ['clean', 'copy', 'cssmin', 'uglify', 'exec:build']);
+    grunt.registerTask('serve', ['clean', 'exec:install', 'connect', 'copy', 'cssmin', 'uglify', 'exec:deploy', 'watch']);
+    grunt.registerTask('build', ['clean', 'exec:install', 'copy', 'cssmin', 'uglify', 'exec:build']);
 };
