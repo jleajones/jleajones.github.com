@@ -1,0 +1,16 @@
+---
+layout: page 
+title: Beats | J.Lea-Jones
+permalink: /beats/
+label: Beats
+---
+<h1 class="page-title"><i class="fa fa-music"></i> {{ page.label }}</h1>
+
+<div class="list-container">
+    <ul class="content-list">
+        {% assign sorted_beats = site.beats | sort:'created' | reverse: %}
+        {% for beat in sorted_beats %}
+            {% include beatExcerpt.html beat=beat %}
+        {% endfor %}
+    </ul>
+</div>

@@ -25,3 +25,7 @@ permalink: /blog/:year/:month/:day/:title/
 collections:
   projects:
     output: true
+  photos:
+    output: true
+  beats:
+    output: true

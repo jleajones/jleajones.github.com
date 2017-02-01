@@ -30,27 +30,27 @@ layout: default
             {% endfor %}
         </div>
 
-        <a href="/lab">See all &raquo;</a>
+        <a href="/projects">See all &raquo;</a>
     </div>
 
-    <div class="widget">
-        <h3><i class="fa fa-sticky-note"></i> recent posts</h3>
+    <!--<div class="widget">-->
+        <!--<h3><i class="fa fa-sticky-note"></i> recent posts</h3>-->
 
-        <div class="row">
-            {% for post in site.posts | limit: 6 %}
-                {% assign is_last = forloop.index | modulo: 3 %}
+        <!--<div class="row">-->
+            <!--{% for post in site.posts | limit: 6 %}-->
+                <!--{% assign is_last = forloop.index | modulo: 3 %}-->
 
-                <div class="columns four">
-                    {% include postExcerpt.html post=post index=forloop.index last=is_last truncate=true %}
-                </div>
+                <!--<div class="columns four">-->
+                    <!--{% include postExcerpt.html post=post index=forloop.index last=is_last truncate=true %}-->
+                <!--</div>-->
 
-                {% if forloop.index == 3 %}
-                    </div>
-                    <div class="row">
-                {% endif %}
-            {% endfor %}
-        </div>
+                <!--{% if forloop.index == 3 %}-->
+                    <!--</div>-->
+                    <!--<div class="row">-->
+                <!--{% endif %}-->
+            <!--{% endfor %}-->
+        <!--</div>-->
 
-        <a href="/blog">See all &raquo;</a>
-    </div>
+        <!--<a href="/blog">See all &raquo;</a>-->
+    <!--</div>-->
 </div>

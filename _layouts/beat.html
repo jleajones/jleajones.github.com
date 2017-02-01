@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="layout">
+    <a href="/beats">&laquo; Back to beats</a>
+    <!--{% if page.image %}-->
+    <!--<div class="post-header-img">-->
+        <!--<img src="/assets/images/{{page.image}}" />-->
+    <!--</div>-->
+    <!--{% endif %}-->
+
+    <div class="container">
+        <section class="row">
+            <article class="eight offset-by-two columns">
+                <!--{% include postHeader.html title=page.title meta=page.tech %}-->
+
+                <h1>{{ page.title }}</h1>
+                {{ content }}
+            </article>
+        </section>
+    </div>
+</div>

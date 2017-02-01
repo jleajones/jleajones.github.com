@@ -1,6 +1,5 @@
 .widget {
     padding: $large-spacing-unit 0;
-    @include border(solid 1px $divider-color, bottom);
     h3 {
 	    @include font-size($font-size * 1.5);
         color: $text-color-disabled;
@@ -15,10 +14,6 @@
 	em,
 	span {
 		@include font-size($font-size * 0.65);
-	}
-	
-	&:last-of-type {
-		border: none;
 	}
 	
 	.row:first-of-type {
