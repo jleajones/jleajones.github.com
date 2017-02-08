@@ -5,10 +5,11 @@
         </a>
     {% endif %}
     <figcaption>
+        <span class="tcd"><i class="fa fa-calendar"></i> {{ include.beat.date | date: "%b %-d, %Y" }}</span>
         <h2>
           <a href="{{ include.beat.url }}">{{ include.beat.title }}</a>
         </h2>
-        <em class="tcd">{{ include.project.tech }}</em>
+
 <!--            <p>{{ project.description | truncate: 65 }}</p>-->
     </figcaption>
 </figure>

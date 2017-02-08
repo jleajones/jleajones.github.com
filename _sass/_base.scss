@@ -264,7 +264,7 @@ form {
 /**
  * Helpers
  */
-.boder {
+.border {
     @include border(solid 1px $divider-color);
 }
 
@@ -298,4 +298,8 @@ form {
 
 .ts {
     font-size: $small-font-size * 0.9;
+}
+
+.no-top-margin {
+    margin-top: 0 !important;
 }

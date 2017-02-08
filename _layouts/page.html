@@ -1,20 +1,24 @@
 ---
 layout: default
 ---
-<div class="layout">
+<div class="layout page {{page.label}}">
+  <header>
+    <div class="container">
+      <h1 class="page-title"><i class="fa fa-{{page.icon}}"></i> {{ page.label }}</h1>
+      <h5>{{ page.subheading}}</h5>
+    </div>
+  </header>
+
   <div class="container">
+    <div class="widget">
       <section class="row">
-          <article class="eight columns">
-              {{ content }}
+        <article class="eight columns">
+          {{ content }}
+        </article>
+        <aside class="four columns">
 
-              {% if page.url contains '/blog' %}
-              <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS <i class="fa fa-rss fa-lg"></i></a></p>
-              {% endif %}
-          </article>
-          <aside class="four columns">
-
-          </aside>
+        </aside>
       </section>
-
+    </div>
   </div>
 </div>

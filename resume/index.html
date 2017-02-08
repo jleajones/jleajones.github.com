@@ -2,13 +2,12 @@
 layout: page
 title: Resume | J.Lea-Jones
 permalink: /resume/
-label: Resume
+label: resume
 section1: workhistory
+icon: briefcase
+subheading: Education, skills, and work experience.
 ---
-<h1><i class="fa fa-briefcase"></i> {{ page.label }}</h1>
-
-<div class="about">
-    <p>{{ site.data.resume.intro }}</p>
+    <p class="no-top-margin">{{ site.data.resume.intro }}</p>
 
       <ul>
        {% for section in site.data.resume.sections %}
@@ -40,4 +39,3 @@ section1: workhistory
            </li>
        {% endfor %}   
       </ul>
-</div>

@@ -1,12 +1,14 @@
 ---
 layout: default
 ---
-<div class="layout">
+<div class="layout project">
     <a href="/projects">&laquo; Back to projects</a>
     {% if page.image %}
-    <div class="post-header-img">
-        <img src="/assets/images/{{page.image}}" />
-    </div>
+    <header>
+        <div class="container">
+            <img src="/assets/images/{{page.image}}" />
+        </div>
+    </header>
     {% endif %}
 
     <div class="container">

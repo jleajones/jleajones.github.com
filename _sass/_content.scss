@@ -7,8 +7,6 @@
 	background: -moz-linear-gradient($background-color, $white);
 	background: linear-gradient($background-color, $white);
     .layout {
-        padding-top: 10px;
-	    
 	    > a {
 		    position: relative;
 		    z-index: 1;
@@ -18,10 +16,9 @@
             ul.content-list {
                 margin: 0;
                 li {
+	                list-style: none;
                     padding-bottom: $spacing-unit * 1.5;
                     margin-bottom: $spacing-unit * 2;
-                    
-    
                     transition-property: all;
                     transition-duration: .25s;
                     transition-timing-function: ease-in;
@@ -38,8 +35,12 @@
                     }
                     
                     &:hover {
-                    @include border(solid 1px $accent-color, bottom);
+                        @include border(solid 1px $accent-color, bottom);
                     }
+	                
+	                &:last-child {
+		                border: none;
+	                }
                 }
             }
         }
