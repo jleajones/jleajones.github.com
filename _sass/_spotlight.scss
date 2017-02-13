@@ -1,17 +1,36 @@
 .spotlight {
-    padding-top: 10px;
-    padding-bottom: $spacing-unit;
-    background: url(/assets/images/css/jumbotron_bg.png) no-repeat;
-    background-size: cover;
-    background-position: center center;
+    position: relative;
+    //background: url(/assets/images/css/jumbotron_bg.png) no-repeat;
+    //background-size: cover;
+    //background-position: center center;
+    background: $primary-color-dark;
     color: $white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+    @include radial-gradient($primary-color-dark, darken($primary-color-dark, 15%));
     @include border(solid 10px $divider-color, bottom);
+    
+    .spotlight-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-top: 10px;
+        padding-bottom: $spacing-unit;
+        height: 100%;
+        width: 100%;
+    }
     h1 {
         padding: 130px 0;
         -webkit-animation-duration: 1.5s;
         animation-duration: 1.5s;
 
         @include font-size(38px);
+    
+        @include media-query($on-tablet) {
+            @include  font-size(30px);
+        }
+	    
+	    @include media-query($on-palm) {
+		    @include  font-size(24px);
+	    }
     }
 }

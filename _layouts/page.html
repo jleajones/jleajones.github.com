@@ -10,15 +10,13 @@ layout: default
   </header>
 
   <div class="container">
-    <div class="widget">
-      <section class="row">
-        <article class="eight columns">
-          {{ content }}
-        </article>
-        <aside class="four columns">
-
-        </aside>
-      </section>
-    </div>
+    <section class="row">
+      <article class="eight columns">
+        {{ content }}
+      </article>
+      <aside class="four columns">
+          {% include aside.html %}
+      </aside>
+    </section>
   </div>
 </div>

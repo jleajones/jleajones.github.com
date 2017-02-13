@@ -32,13 +32,15 @@ module.exports = function (grunt) {
 		    vendor: {
 			    files: {
 				    'assets/vendor/scripts.min.js': ['assets/vendor/js/jquery.min.js',
-					    'assets/vendor/js/jquery.animatecss.min.js']
+					    'assets/vendor/js/jquery.animatecss.min.js',
+					    'assets/vendor/js/EasePack.min.js',
+					    'assets/vendor/js/TweenLite.min.js']
 			    }
 		    },
 		    scripts: {
 		    	files: {
-		    		'assets/js/scripts.min.js': ['assets/js/form.js',
-					    'assets/js/tracker.js', 'assets/js/page.js']
+		    		'assets/js/scripts.min.js': ['assets/js/alert.js', 'assets/js/form.js',
+					    'assets/js/tracker.js', 'assets/js/audioPlayer.js', 'assets/js/page.js']
 			    }
 		    }
 	    },
@@ -54,7 +56,7 @@ module.exports = function (grunt) {
             bowerJS: {
                 expand: true,
                 cwd: 'bower_components/',
-                src: ['**/**.min.js', '!**/src/**'],
+                src: ['**/**.min.js', '!**/jquery/src/**'],
                 flatten: true,
                 dest: 'assets/vendor/js'
             },

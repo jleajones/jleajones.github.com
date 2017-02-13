@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="layout project">
+<div class="layout">
     <a href="/projects">&laquo; Back to projects</a>
     {% if page.image %}
     <header>
@@ -14,12 +14,14 @@ layout: default
     <div class="container">
         <section class="row">
             <article class="eight columns">
-                {% include postHeader.html title=page.title meta=page.tech %}
+                <div class="widget">
+                    {% include projectHeader.html title=page.title tech=page.tech %}
 
-                {{ content }}
+                    {{ content }}
+                </div>
             </article>
             <aside class="four columns">
-
+                    {% include aside.html %}
             </aside>
         </section>
     </div>

@@ -6,13 +6,15 @@ label: beats
 subheading: Hip-Hop, RnB, Pop, and EDM
 icon: music
 ---
-<div class="list-container">
-    <ul class="content-list">
-        {% assign sorted_beats = site.beats | sort:'created' | reverse: %}
-        {% for beat in sorted_beats %}
-        <li>
-            {% include beatExcerpt.html beat=beat %}
-        </li>
-        {% endfor %}
-    </ul>
+<div class="widget">
+    <div class="list-container">
+        <ul class="content-list">
+            {% assign sorted_beats = site.beats | sort:'created' | reverse: %}
+            {% for beat in sorted_beats %}
+            <li>
+                {% include beatExcerpt.html beat=beat %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>

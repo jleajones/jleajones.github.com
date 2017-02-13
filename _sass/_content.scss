@@ -8,7 +8,7 @@
 	background: linear-gradient($background-color, $white);
     .layout {
 	    > a {
-		    position: relative;
+		    position: absolute;
 		    z-index: 1;
 	    }
 

@@ -16,6 +16,7 @@
   "dependencies": {
     "fontawesome": "~4.4.0",
     "animateCSS": "~1.2.1",
-    "skeleton": "skeleton-css#^2.0.4"
+    "skeleton": "skeleton-css#^2.0.4",
+    "gsap": "^1.19.1"
   }
 }

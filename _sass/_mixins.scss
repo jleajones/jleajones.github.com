@@ -11,7 +11,6 @@
 	}
 }
 
-
 @mixin font-size($font-size, $line-height: auto, $base-font-size: $base-font-size) {
 	@include font-size-only($font-size, $base-font-size);
 	
@@ -26,6 +25,16 @@
 
 @mixin line-height ($line-height, $font-size: $base-font-size) {
 	line-height:  ceil(percentage($line-height / $font-size));
+}
+
+@mixin radial-gradient($from, $to) {
+	background: -moz-radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $from), color-stop(100%, $to));
+	background: -webkit-radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background: -o-radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background: -ms-radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background: radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background-color: $from;
 }
 
 

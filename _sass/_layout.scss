@@ -4,8 +4,6 @@
 
 .layout {
     > header {
-        padding-top: 10px;
-        padding-bottom: $spacing-unit;
         color: $white;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
         @include border(solid 10px $divider-color, bottom);
@@ -23,6 +21,16 @@
     
     &.beats > header {
         background-image: url(/assets/images/css/beats_bg.png);
+        background-repeat: no-repeat;
+    }
+    
+    &.photos > header {
+        background-image: url(/assets/images/css/photography_bg.png);
+        background-repeat: no-repeat;
+    }
+    
+    &.projects > header {
+        background-image: url(/assets/images/css/code_bg.png);
         background-repeat: no-repeat;
     }
 }

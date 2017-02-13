@@ -6,13 +6,15 @@ label: projects
 icon: rocket
 subheading: Websites, mobile applications, and more.
 ---
-<div class="list-container">
-    <ul class="content-list">
-        {% assign sorted_projects = site.projects | sort:'created' | reverse: %}
-        {% for project in sorted_projects %}
-        <li>
-            {% include projectExcerpt.html project=project %}
-        </li>
-        {% endfor %}
-    </ul>
+<div class="widget">
+    <div class="list-container">
+        <ul class="content-list">
+            {% assign sorted_projects = site.projects | sort:'created' | reverse: %}
+            {% for project in sorted_projects %}
+            <li>
+                {% include projectExcerpt.html project=project %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>

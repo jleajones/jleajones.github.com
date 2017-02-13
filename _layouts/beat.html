@@ -3,20 +3,24 @@ layout: default
 ---
 <div class="layout">
     <a href="/beats">&laquo; Back to beats</a>
-    <!--{% if page.image %}-->
-    <!--<div class="post-header-img">-->
-        <!--<img src="/assets/images/{{page.image}}" />-->
-    <!--</div>-->
-    <!--{% endif %}-->
+    {% if page.image %}
+    <header>
+        <div class="container">
+            <img src="/assets/images/{{page.image}}" />
+        </div>
+    </header>
+    {% endif %}
 
     <div class="container">
         <section class="row">
-            <article class="eight offset-by-two columns">
-                <!--{% include postHeader.html title=page.title meta=page.tech %}-->
+            <article class="eight columns">
+                {% include beatHeader.html title=page.title %}
 
-                <h1>{{ page.title }}</h1>
                 {{ content }}
             </article>
+            <aside class="four columns">
+                {% include aside.html %}
+            </aside>
         </section>
     </div>
 </div>
